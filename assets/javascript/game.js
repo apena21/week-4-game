@@ -1,8 +1,36 @@
 //=================================================================
 //                  VARIABLES
 
+
 var computerTargetScore = Math.floor((Math.random() * 120) + 19);
 console.log("The computer generated target score is: " + computerTargetScore);
+
+var crystalValue = [
+    {
+        crystalName: "amethyst",
+        crystalValue1: "",
+
+    },
+
+    {
+        crystalName: "brown_crystal",
+        crystalValue2: "",
+        
+    },
+
+    {
+        crystalName: "colorful_crystal",
+        crystalValue3: "",
+
+    },
+
+    {
+        crystalName: "crystal-rocks",
+        crystalValue4: "",
+    }
+]
+
+
 
 // crystal 1 = Amethyst
 var crystalValue1 = 0;
@@ -12,6 +40,7 @@ var crystalValue2 = 0;
 var crystalValue3 = 0;
 // crystal 4 = Crystal Rocks
 var crystalValue4 = 0;
+
 
 //===================================================================
 //                  FUNCTIONS
@@ -29,7 +58,39 @@ UpdateTargetScore();
 // This function is run the first time a user clicks on the amethyst crystal; 
 // create an onClick event that triggers an on click event.
 
+// Create a for loop to create crystals for every numberOption.
+for (var i = 0; i < crystalValue.length; i++) {
 
+// code to generate a random value for each crystal and to add the value to the counter:
+
+function UpdateCrystalValue() {
+    $(".crystal-image").on( "click", function () {
+        crystalValue1 = Math.floor((Math.random() * 12) + 1);
+        counter+=crystalValue1;
+        document.querySelector("#counter").innerHTML = crystalValue1;
+
+        crystalValue2 = Math.floor((Math.random() * 12) + 1);
+        counter+=crystalValue2;
+        document.querySelector("#counter").innerHTML = crystalValue2;
+
+        crystalValue3 = Math.floor((Math.random() * 12) + 1);
+        counter+=crystalValue3;
+        document.querySelector("#counter").innerHTML = crystalValue3;
+
+        crystalValue4 = Math.floor((Math.random() * 12) + 1);
+        counter+=crystalValue4;
+        document.querySelector("#counter").innerHTML = crystalValue4;
+
+});
+console.log( "The value of an amethyst is " + crystalValue1 );
+console.log( "The value of a brown crystal is " + crystalValue2 );
+console.log( "The value of a colorful crystal is " + crystalValue3 );
+console.log( "The value of a crystal rock is " + crystalValue4 );
+};
+};
+UpdateCrystalValue()
+
+/*
 // code to generate a random value for the amethyst and to add the value to the counter
 $("#amethyst").on( "click", function() {
     crystalValue1 = Math.floor((Math.random() * 12) + 1);
@@ -75,59 +136,14 @@ $("#amethyst").on( "click", function() {
 
     console.log( "The value of a crystal rock is " + crystalValue4 );
   });
-
-  /*
-  var counter = 0;
-  $(".crystal-image").on("click", function() {
-
-    counter += 10;
-
-    alert("Your new score is: " + counter);
+})
 
 
-/*  $("#amethyst").on("click", function(clickAmethyst) {
-    
-            // ... we trigger an alert.
-            alert("I've been clicked!");
-            for (crystalValue1)
-            do {
-                crystalValue1 = Math.floor((Math.random() * 12) + 1);
-            } while(crystalValue1 === crystalValue2);
-            console.log("The amethyst value is: " +computerTargetScore);
+  //                SECOND ATTEMPT
+//=============================================================================
+//                  VARIABLES
 
-console.log("The value of an amethyst is " + clickAmethyst);            
-  });
 
-  /*
-for (crystalValue1)
-do {
-    crystalValue1 = Math.floor((Math.random() * 12) + 1);
-} while(crystalValue1 === crystalValue2);
-console.log("The amethyst value is: " +computerTargetScore);
 
-do {
-    crystalValue2 = Math.floor((Math.random() * 12) + 1);
-} while(crystalValue2 === crystalValue3);
-console.log("The brown cyrstal's value is: " +computerTargetScore);
 
-/*
-var crystalValue2 = Math.floor((Math.random() * 12) + 1);
-console.log("The brown crystal's value is: " +computerTargetScore);
-
-var crystalValue3 = Math.floor((Math.random() * 12) + 1);
-console.log("The colorful crystal's value is: " +computerTargetScore);
-
-var crystalValue3 = Math.floor((Math.random() * 12) + 1);
-console.log("The crystal rock's value is: " +computerTargetScore);
-
-// FUNCTIONS
-// ==========================================================================
- 
-// This function is run whenever the user presses a key.
-
-/*
-document.onkeyup = function(event) {
-    
-            console.log("target score is: " + randomTargetScore);
-}
 */
