@@ -68,6 +68,10 @@
     margin-top: 20px;
 }
 
+.col-md-5{
+    padding-left: 0px;
+}
+
 #scoreboard_text{
     height: 20px;
     width: 29%;
