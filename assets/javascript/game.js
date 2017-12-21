@@ -139,16 +139,57 @@ $( "#amethyst" ).click(function() {
     };
            
 });
-
- 
-
-              /* 
-
-                  
-
+             
 $( "#brown_crystal" ).click(function() {
+    if (counter === computerTargetScore) {
+        (document.querySelector ("#winsCount").innerHTML = winsCount++);
+        console.log( "You won!  Wins increased by 1 point.");
+    
+        }else if (counter > computerTargetScore) {
+        ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+        console.log( "You lost!  Losses increased by 1 point.");
+    
+        }else if (counter < computerTargetScore) {
+        (document.querySelector("#counter").innerHTML = counter+=brownCrystalValue);
+        console.log( "The counter increased by the brown crystal value of " + brownCrystalValue + ".");
+        };
+               
+});
 
-  ( document.querySelector("#counter").innerHTML = counter+=brownCrystalValue);
+$( "#colorful_crystal" ).click(function() {
+    if (counter === computerTargetScore) {
+        (document.querySelector ("#winsCount").innerHTML = winsCount++);
+        console.log( "You won!  Wins increased by 1 point.");
+    
+        }else if (counter > computerTargetScore) {
+        ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+        console.log( "You lost!  Losses increased by 1 point.");
+    
+        }else if (counter < computerTargetScore) {
+        (document.querySelector("#counter").innerHTML = counter+=colorfulCrystalValue);
+        console.log( "The counter increased by the colorful crystal value of " + colorfulCrystalValue + ".");
+        };
+               
+});
+
+$( "#crystal-rocks" ).click(function() {
+    if (counter === computerTargetScore) {
+        (document.querySelector ("#winsCount").innerHTML = winsCount++);
+        console.log( "You won!  Wins increased by 1 point.");
+    
+        }else if (counter > computerTargetScore) {
+        ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+        console.log( "You lost!  Losses increased by 1 point.");
+    
+        }else if (counter < computerTargetScore) {
+        (document.querySelector("#counter").innerHTML = counter+=crystalRocksValue);
+        console.log( "The counter increased by the crystal rocks value of " + crystalRocksValue + ".");
+        };
+               
+});
+
+    /*
+  (document.querySelector("#counter").innerHTML = counter+=brownCrystalValue);
 
   console.log( "The counter increased by the brown crystal value of " +brownCrystalValue+ ".");
 
