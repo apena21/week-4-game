@@ -75,12 +75,16 @@
         color: white;
     
         font-weight: bold;
-    
     }
     
+ 
+
+
     .container{
     
-        margin-left: 20px;
+        margin-left: 0px;
+        background: #f6fa78;
+        width: 100%;
     
     }
     
@@ -89,24 +93,27 @@
     #instructions{
     
         padding-left: 0px;
+        margin-left: 20px;
     
     }
     
-     
+     .row{
+       background:#f6fa78;
+       margin-left: 5px;
+     }
     
     #points{
     
        
     
         height: 150px;
-    
         width: 63%;
-    
         margin-left: 20px;
-    
         float: left;
-    
-        background: lightseagreen
+        background: lightseagreen;
+        font-weight: bold;
+        
+        
     
     }
     
@@ -126,7 +133,7 @@
     
         background: lightgreen;
     
-                    align: right;
+        align: right;
     
      
     
@@ -136,7 +143,8 @@
     
     #winsText{
     
-                    text-align: center;
+        text-align: center;
+        font-weight: bold;
     
                    
     
@@ -148,9 +156,9 @@
     
                    
     
-        position: absolute;
-    
+        position: absolute;    
         margin-left: 260px;
+        font-weight: bold;
     
     }
     
@@ -159,10 +167,9 @@
     #lossesCount{
     
         clear: both;
-
         position: absolute;
-
-        margin-left: 260px;     
+        margin-left: 260px;   
+        font-weight: bold;  
 
         }
     
@@ -170,9 +177,9 @@
     
     #lossesText{
     
-                    text-align: center;
-    
-                    border: 1 px solid orange;
+        text-align: center;    
+        border: 1 px solid orange;
+        font-weight: bold;
     
     }             
     
@@ -198,17 +205,13 @@
     
     #scoreboard_text{
     
-                    lear: both;
-    
-        height: 20px;
-    
-        width: 63%;
-    
-        margin-left: 20px;
-    
-        float: left;
-    
+        clear: both;    
+        height: 20px;    
+        width: 63%;    
+        margin-left: 20px;    
+        float: left;    
         background: lightskyblue;
+        font-weight: bold;
     
     }
     
@@ -218,16 +221,12 @@
     
      
     
-        clear: both;
-    
-        height: 150px;
-    
-        width: 63%;
-    
-        margin-left: 20px;
-    
+        clear: both;    
+        height: 150px;    
+        width: 63%;    
+        margin-left: 20px;    
         background: lightskyblue;
-    
+        font-weight: bold;
      
     
     }

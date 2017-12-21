@@ -120,33 +120,74 @@ var crystalValue4 = 0;
 
 // Function that updates the Counter...
 
- 
+// button is clicked
+// calculate a new value
+// if value > computerNumber
+// lossesCount ++
 
  
+
+// based on that new value,
+// check if new value is greater than computerNumber
+// if so, LOSE + reset()
+
+ 
+
+ /*
 
 $( "#amethyst" ).click(function() {
-    if (counter === computerTargetScore) {
+    console.log('counter inside amethyst click is ' + counter)
+    if (counter ===  computerTargetScore) {
     (document.querySelector ("#winsCount").innerHTML = winsCount++);
+    resetGame();
     console.log( "You won!  Wins increased by 1 point.");
 
-    }else if (counter > computerTargetScore) {
-    ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+    } else if (counter > computerTargetScore) {
+    document.querySelector ("#lossesCount").innerHTML = lossesCount++;
+    resetGame();
     console.log( "You lost!  Losses increased by 1 point.");
 
-    }else if (counter < computerTargetScore) {
-    (document.querySelector("#counter").innerHTML = counter+=amethystValue);
+    } else {
+    console.log('amethystValue before assimilating with counter value is: ' + amethystValue)
+    console.log('counter before assimilating with amethystValue value is: ' + counter)
+    
+    counter += amethystValue;
+    console.log('counter after amethyst click is ' + counter)
+    document.querySelector("#counter").innerHTML = counter;
     console.log( "The counter increased by the amethyst value of " + amethystValue + ".");
     };
            
+});
+
+*/
+
+$( "#amethyst" ).click(function() {
+    if (counter === computerTargetScore) {
+        (document.querySelector ("#winsCount").innerHTML = winsCount++);
+        resetGame();
+        console.log( "You won!  Wins increased by 1 point.");
+    
+        }else if (counter > computerTargetScore) {
+        ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+        resetGame();
+        console.log( "You lost!  Losses increased by 1 point.");
+    
+        }else if (counter < computerTargetScore) {
+        (document.querySelector("#counter").innerHTML = counter+=amethystValue);
+        console.log( "The counter increased by the amethyst value of " + amethystValue + ".");
+        };
+               
 });
              
 $( "#brown_crystal" ).click(function() {
     if (counter === computerTargetScore) {
         (document.querySelector ("#winsCount").innerHTML = winsCount++);
+        resetGame();
         console.log( "You won!  Wins increased by 1 point.");
     
         }else if (counter > computerTargetScore) {
         ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+        resetGame();
         console.log( "You lost!  Losses increased by 1 point.");
     
         }else if (counter < computerTargetScore) {
@@ -159,10 +200,12 @@ $( "#brown_crystal" ).click(function() {
 $( "#colorful_crystal" ).click(function() {
     if (counter === computerTargetScore) {
         (document.querySelector ("#winsCount").innerHTML = winsCount++);
+        resetGame();
         console.log( "You won!  Wins increased by 1 point.");
     
         }else if (counter > computerTargetScore) {
-        ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+        ( $("#lossesCount").text = lossesCount++);
+        resetGame();
         console.log( "You lost!  Losses increased by 1 point.");
     
         }else if (counter < computerTargetScore) {
@@ -175,12 +218,14 @@ $( "#colorful_crystal" ).click(function() {
 $( "#crystal-rocks" ).click(function() {
     if (counter === computerTargetScore) {
         (document.querySelector ("#winsCount").innerHTML = winsCount++);
+        resetGame();
         console.log( "You won!  Wins increased by 1 point.");
-    
+       
         }else if (counter > computerTargetScore) {
         ( document.querySelector ("#lossesCount").innerHTML = lossesCount++);
+        resetGame();
         console.log( "You lost!  Losses increased by 1 point.");
-    
+         
         }else if (counter < computerTargetScore) {
         (document.querySelector("#counter").innerHTML = counter+=crystalRocksValue);
         console.log( "The counter increased by the crystal rocks value of " + crystalRocksValue + ".");
@@ -188,6 +233,38 @@ $( "#crystal-rocks" ).click(function() {
                
 });
 
+function resetGame() {
+
+    // Reset target score
+    computerTargetScore = Math.floor((Math.random() * 120) + 19);
+    (document.querySelector("#points").innerHTML = computerTargetScore);
+
+    // Reset random value for amethyst
+    amethystValue = Math.floor((Math.random() * 12) + 1);
+    console.log( "The new value of an amethyst is: " + amethystValue + ".");
+
+    // Reset random value for the brown crystal
+    brownCrystalValue = Math.floor((Math.random() * 12) + 1);
+    console.log( "The new value of a brown crystal is: " + brownCrystalValue + ".");
+
+    // Reset ramdom value for the colorful crystal
+    colorfulCrystalValue = Math.floor((Math.random() * 12) + 1);
+    console.log( "The new value of a colorful crystal is: " + colorfulCrystalValue + ".");
+    
+    // Reset randome vlaue for the crystal rocks
+    crystalRocksValue = Math.floor((Math.random() * 12) + 1);
+    console.log( "The new value of the crystal rocks is: " + crystalRocksValue + ".");
+  
+    console.log("The game has reset.");
+    console.log("The computer generated target score is: " + computerTargetScore + ".");
+
+    //Reset counter
+    document.querySelector ("#counter").innerHTML = "0"
+
+    
+    
+    
+}
     /*
   (document.querySelector("#counter").innerHTML = counter+=brownCrystalValue);
 
