@@ -8,8 +8,6 @@
     
             float: left;
     
-       
-    
             margin-left: 20px;
     
        
@@ -17,16 +15,10 @@
         }
     
        
-    
-         
-    
-        
+
     
         #brown_crystal {
-    
-       
-    
-            clear: both;
+          clear: both;
     
        
     
@@ -136,27 +128,27 @@
     
         #title{
     
-                                    line-height: 100px;
-    
-                    font-weight: bold;
-    
-                                    font-family: Arial, Helvetica, sans-serif;
-    
-                                    font-size: 3em;
+        line-height: 100px;
+
+        font-weight: bold;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 3em;
     
         }
     
        
     
-                    mark{
-    
-                                    color: white;
-    
-                                    background: orangered;
-    
-                                   
-    
-                    }
+        mark{
+
+        color: white;
+
+        background: orangered;
+
+                        
+
+        }
     
      
     
@@ -164,12 +156,12 @@
     
        
     
-            margin-left: 0px;
-    
-            background: #f6fa78;
-    
-            width: 100%;
-    
+        margin-left: 0px;
+
+        background: #f6fa78;
+
+        width: 100%;
+
        
     
         }
@@ -182,19 +174,19 @@
     
         #instructions{
     
-                                    font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
     
             font-weight: bold;
     
-                                    color: green;
-    
-                                    padding-left: 0px;
+            color: green;
+
+            padding-left: 0px;
     
             margin-left: 20px;
     
-                                    background: pink;
-    
-                                    height: 350px;
+            background: pink;
+
+            height: 350px;
     
        
     
@@ -208,7 +200,7 @@
     
            margin-left: 5px;
     
-                       padding-top: 20px;
+            padding-top: 20px;
     
          }
     
@@ -288,13 +280,13 @@
     
         #winsText{
     
-                                    font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
     
             text-align: center;
     
             font-weight: bold;
     
-                                    font-size: 20px;
+            font-size: 20px;
     
        
     
@@ -324,7 +316,7 @@
     
             font-weight: bold;
     
-                                    font-size: 20px;
+            font-size: 20px;
     
                                    
     
@@ -342,19 +334,19 @@
     
        
     
-            clear: both;
+        clear: both;
+
+        position: absolute;
+
+        margin-left: 300px;  
+
+        font-weight: bold;
     
-            position: absolute;
-    
-            margin-left: 300px;  
-    
-            font-weight: bold;
-    
-                                    font-size: 20px;
+        font-size: 20px;
     
                                                                    
     
-            }
+        }
     
        
     
@@ -364,7 +356,7 @@
     
         #lossesText{
     
-                                    font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
     
             text-align: center;   
     
@@ -372,7 +364,7 @@
     
             font-weight: bold;
     
-                                    font-size: 20px;
+            font-size: 20px;
     
        
     
@@ -392,7 +384,7 @@
     
        
     
-                    padding-bottom: 15px;
+        padding-bottom: 15px;
     
        
     
@@ -422,11 +414,11 @@
     
         #scoreboard_text{
     
-                                    font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
     
             font-weight: bold;
     
-                                    color: black;   
+            color: black;   
     
             clear: both;   
     
@@ -442,7 +434,7 @@
     
             font-weight: bold;
     
-                                    padding-top: 15px;
+            padding-top: 15px;
     
         }
     
@@ -468,6 +460,6 @@
     
             font-weight: bold;
     
-                                    font-size: 36px;
+            font-size: 36px;
     
             }
