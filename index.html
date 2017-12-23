@@ -1,108 +1,248 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <!--bootstrap link -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     
-        <!-- CSS link -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<head>
+
+  <!--bootstrap link -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+
+  <!-- CSS link -->
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  <!-- Javascript link -->
+
+   
+
+  <script type="text/javascript"></script>
+
+ 
+
+  <title>CrystalsCollector Game</title>
+
+ 
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- row 1 -->
+
+    <div class="row">
+
+                                <div class="col-sm-5"> <!-- left side -->
+
+                                                <div class="row">
+
+ 
+
+                                                                <div id="title">
+
+                                                                                                                                <h1><mark>CrystalsCollector!</mark/></h1>
+
+                                                                </div>
+
+                                                </div>
+
+                                </div>
+
+    </div>
+
+ 
+
+    <div class="row">
+
+                                <div class="col-md-5 ">
+
+ 
+
+                                                <!-- Note that this div is now empty. We will fill it dynamically -->
+
+                                                <div id="instructions">  
+
+                                                                                                                <br><br>
+
+                                                                                                                <p>You will be given a random number at the start of the game.</p>
+
+                                                                                                                <br>
+
+                                                                                                                <p>There are four crystals below. By clicking on a crystal you will add a specific
+
+                                                                                                                                                                                amount of points to your score.</p>
+
+                                                                                                                <br><br>
+
+                                                                                                                <p>You win the game by matching your total score to a random number, you
+
+                                                                                                                                                                                lose the game if your total score goes above the the random number.</p>
+
+                                                                                                                <br><br>
+
+                                                                                                                <p>The value of each crysta3l is hidden from you until you click on it. </p>
+
+                                                                                                                <br><br>
+
+                                                                                                                <p>Each time the game starts, the game will change the values of each crystal.</p>
+
+                                                </div>
+
+                                </div>
+
+                </div>
+
+</div>
+
+
+    <div class="row">
+
+                                <div class="col-md-3 ">
+
+                                                <div id="points">
+
+                                                               
+
+                                                </div>
+
+ 
+
+                                                <div class="col-md-13">
+
+                                                <br>
+
+                                                <p id= "winsText">Wins:</p>
+
+                                                <br>
+
+                                                <p id = "winsCount">0</p>
+
+                                                <br>
+
+                                                <div id="winsBlock"/></div>
+
+                                                <br>
+
+                                                <p id= "lossesText">Losses: </p>
+
+                                                <br>
+
+                                                <p id = "lossesCount">0</p>
+
+                                               
+
+                               
+
+                                </div>
+
+                                                                               
+
+                                                  
+
+                                                </div>
+
+                                </div>
+
+    </div>
+
+ 
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <!--- added this extra "crystals" div as an experiment -->
+
+            <div id = "crystal-image">
+
+ 
+
+                <img id="amethyst"
+
+                src="assets/images/amethyst-violet-crystal.jpeg" class="crystal-image" alt="amethyst">
+
       
-        <!-- Javascript link -->
-        <script type="text/javascript"></script>
 
-        <title>CrystalsCollector Game</title>
-    </head>
+                <img id="brown_crystal"
 
-    <body>
+                src="assets/images/brown_crystal.jpg" class="crystal-image" alt="brown crystal">
 
-        <div class="container">
-            <!-- row 1 -->
-            <div class="row">
-                <div class="col-sm-5"> <!-- left side -->
-                    <div class="row">
-                        <div id="title">
-                            <h1>CrystalsCollector!</h1>
-                        </div>
-                    </div>
-                </div>
+      
+
+                <img id="colorful_crystal"
+
+                src="assets/images/colorful_crystal.jpg" class="crystal-image" alt="colorful crystal">
+
+ 
+
+                <img id="crystal-rocks"
+
+                src="assets/images/crystal-rocks.jpg" class="crystal-image" alt="crystal rocks">
+
+ 
+
             </div>
 
-            <div class="row">
-                <div class="col-md-5 ">
-
-                <!-- Note that this div is now empty. We will fill it dynamically -->
-                    <div id="instructions">     
-
-                        <p>You will be given a random number at the start of the game.</p>
-
-                        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.</p>
-
-                        <p>You win the game by matching your total score to a random number, you
-
-                            lose the game if your total score goes above the the random number.</p>
-
-                        <p>The value of each crystal is hidden from you until you click on it. </p>
-
-                        <p>Each time the game starts, the game will change the values of each crystal.</p>
-
-                    </div>
-                </div>
-            </div>
         </div>
-            <div class="row">
-                <div class="col-md-3 ">
-                    <div id="points">
-                    </div>
-                    <div class="col-md-13">
-                        <p id= "winsText">Wins:</p>
-                        <p id = "winsCount">0</p>
-                        <br>
-                        <div id="winsBlock"/></div>
-                        <br>
-                        <p id= "lossesText">Losses: </p>
-                        <p id = "lossesCount">0</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <!--- added this extra "crystals" div as an experiment -->
-                    <div id = "crystal-image">
-                        <img id="amethyst"
-                        src="assets/images/amethyst-violet-crystal.jpeg" class="crystal-image" alt="amethyst">
 
-                        <img id="brown_crystal"
-                        src="assets/images/brown_crystal.jpg" class="crystal-image" alt="brown crystal">
+    </div>
 
-                        <img id="colorful_crystal"
-                        src="assets/images/colorful_crystal.jpg" class="crystal-image" alt="colorful crystal">
+ 
 
-                        <img id="crystal-rocks"
-                        src="assets/images/crystal-rocks.jpg" class="crystal-image" alt="crystal rocks">
-                    </div>
-                </div>
+    <div class="row">
+
+            <div class="col-md-6">
+
+ 
+
+                <div id= "scoreboard_text">
+
+                Your total score is:
+
+                </div> 
+
+ 
+
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div id= "scoreboard_text">
-                        Your total score is:
-                    </div> 
+    </div>
+
+   
+
+    <div class="row">
+
+            <div class="col-md-6">
+
+                <div id="counter">
+
+ 
+
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div id="counter">
-                    </div>
-                </div>
+
             </div>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </div>
 
-            <script src="assets/javascript/game.js"></script>
+ 
 
-    </body>
+   
+
+ 
+
+ 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="assets/javascript/game.js"></script>
+
+ 
+
+</body>
 
 </html>
